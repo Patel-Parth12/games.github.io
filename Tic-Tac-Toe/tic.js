@@ -183,8 +183,3 @@ const setMessage=function(msg){
 	document.getElementById("print").innerText = msg;
 };
 setMessage("Player X turn");
-
-var urlParams = new URLSearchParams(window.location.search);
-var sectionName = urlParams.get('section');
-
-console.log(sectionName);
