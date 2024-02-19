@@ -62,8 +62,39 @@
 		<br><br>
 		<p id="print"></p>
 	</div>
+
+	<!-- Start game modal -->
+    	<div id="startModal" class="modal">
+        	<div class="modal-content">
+            		<span class="close" onclick="closeModal()">&times;</span>
+            		<h2>Welcome to Tic Tac Toe!</h2>
+            		<p>Try to win or lose against the computer!</p>
+            		<button onclick="startGame()">Start Game</button>
+        	</div>
+    	</div>
+	
 	<!-- JavaScript file included -->
 	<script src="tic.js"></script>
+
+	<script>
+	        function showDialog() {
+	            // Show the start modal when the page is loaded
+	            var modal = document.getElementById("startModal");
+	            modal.style.display = "block";
+	        }
+	
+	        function closeModal() {
+	            // Close the start modal
+	            var modal = document.getElementById("startModal");
+	            modal.style.display = "none";
+	        }
+	
+	        function startGame() {
+	            // Start the game
+	            closeModal(); // Close the modal before starting the game
+	            // You may need to add more logic here to start your game
+	        }
+   	</script>
 </body>
 
 </html>
