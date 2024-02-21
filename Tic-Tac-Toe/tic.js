@@ -58,20 +58,31 @@ const computerMove=function(turn){
 			return getRandomItem(freePosition);
 		}
 	}
-
-	freePosition = getCornerFreePosition(1,3,7,9);
-	if(freePosition.length > 0){
-		return getRandomItem(freePosition);
-	}
 	freePosition = getCornerFreePosition(5);
 	if(freePosition.length > 0){
 		return getRandomItem(freePosition);
 	}
+	freePosition = getCornerFreePosition(7);
+	if(freePosition.length > 0){
+		return getRandomItem(freePosition);
+	}
+	freePosition = getCornerFreePosition(1,3,9);
+	if(freePosition.length > 0){
+		return getRandomItem(freePosition);
+	}
+	// freePosition = getCornerFreePosition(1,3,7,9);
+	// if(freePosition.length > 0){
+	// 	return getRandomItem(freePosition);
+	// }
+	// freePosition = getCornerFreePosition(5);
+	// if(freePosition.length > 0){
+	// 	return getRandomItem(freePosition);
+	// }
 	freePosition = getCornerFreePosition(2,4,6,8);
 	if(freePosition.length > 0){
 		return getRandomItem(freePosition);
 	}
-	
+
 	return null;
 };
 const getRandomItem=function(arr) {
